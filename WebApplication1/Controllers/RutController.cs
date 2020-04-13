@@ -16,9 +16,14 @@ namespace WebApplication1.Controllers
         // GET: api/18828818/9
         
        
-        [HttpGet("{rut}/{dv}", Name = "GetRut")]
-        public string Get(int rut, string dv)
-        {
+        [HttpGet("{rutw}", Name = "GetRut")]
+        public string Get(string rutw)
+        {   
+            //sustrae el rut sin el digito verificador a un entero.
+            int rut = Int32.Parse(rutw.Substring(0,(rutw.IndexOf("-"))));
+            
+            string dv = rutw.Substring(rutw.IndexOf("-")+ 1,1);
+           
             int Digito;
             int Contador;
             int Multiplo;
