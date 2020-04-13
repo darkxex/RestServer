@@ -18,7 +18,9 @@ namespace WebApplication1.Controllers
        
         [HttpGet("{rutw}", Name = "GetRut")]
         public string Get(string rutw)
-        {   
+        {
+            if (rutw.IndexOf("-") == -1)
+            { return "Por favor ingrese el Guión del dígito verificador (ej: 12345678-9)."; }
             //sustrae el rut sin el digito verificador a un entero.
             int rut = Int32.Parse(rutw.Substring(0,(rutw.IndexOf("-"))));
             
