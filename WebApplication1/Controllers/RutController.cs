@@ -21,8 +21,8 @@ namespace WebApplication1.Controllers
         {
             if (rutw.IndexOf("-") == -1)
             { return "Por favor ingrese el Guión del dígito verificador (ej: 12345678-9)."; }
-            //sustrae el rut sin el digito verificador a un entero.
-            int rut = Int32.Parse(rutw.Substring(0,(rutw.IndexOf("-"))));
+            //sustrae el rut sin el digito verificador a un entero y elimina los "."
+            int rut = Int32.Parse(rutw.Substring(0,(rutw.IndexOf("-"))).Replace(".",""));
             
             string dv = rutw.Substring(rutw.IndexOf("-")+ 1,1);
            
