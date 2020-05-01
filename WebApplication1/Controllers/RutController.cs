@@ -22,6 +22,7 @@ namespace WebApplication1.Controllers
         [HttpGet("{rutw}", Name = "GetRut")]
         public string Get(string rutw)
         {
+            rutw = rutw.Replace("k", "K");
             string msgValido = "Rut invalido.";
             StringBuilder sb = new StringBuilder();
             StringWriter sw = new StringWriter(sb);

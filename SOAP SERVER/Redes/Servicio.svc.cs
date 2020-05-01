@@ -15,6 +15,7 @@ namespace Redes
         {
             try
             {
+                r = r.Replace("k", "K");
                 r = r.Replace(".", "");
                 string[] rut = r.Split('-');
 
