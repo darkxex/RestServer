@@ -67,11 +67,11 @@ div {
 </style>
 <body>
 
-<h3>Cliente en PHP para servidor Rest.</h3>
+<h3>Cliente en PHP para servidor SOAP.</h3>
 <p>
 <h3>Nombre Propio.</h3>
 <div>
-  <form name="datosnombre" action="/action_page.php" onsubmit="return validateForm()">
+  <form name="datosnombre" action="/soap_page.php" onsubmit="return validateForm()">
     <label for="name">Nombres:</label>
     <input type="text" id="name" name="nombre" placeholder="Nombres...">
 
@@ -92,14 +92,13 @@ div {
 </div>
 <h3>Validación dígito verificador.</h3>
 <div>
-  <form name="datosrut" action="/action_page_second.php" onsubmit="return validateForm2()">
+  <form name="datosrut" action="/soap_page_second.php" onsubmit="return validateForm2()">
     <label for="crut">Rut:</label>
     <input type="text" id="crut" name="rut" placeholder="Rut a verificar... (ej: 18828818-9)">
 
     <input type="submit" value="Enviar Rut">
   </form>
 </div>
-<p><a href="http://localhost/index_soap.php">Para abrir el Cliente SOAP presione aqu&iacute;.</a></p>
 </body>
 </html>
 
