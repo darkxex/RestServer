@@ -1,0 +1,14 @@
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Debug\netcoreapp2.1\Web Service Rest.deps.json
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Debug\netcoreapp2.1\Web Service Rest.runtimeconfig.json
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Debug\netcoreapp2.1\Web Service Rest.runtimeconfig.dev.json
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Debug\netcoreapp2.1\Web Service Rest.dll
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Debug\netcoreapp2.1\Web Service Rest.pdb
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Debug\netcoreapp2.1\RestServer.csprojAssemblyReference.cache
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Debug\netcoreapp2.1\RestServer.csproj.CoreCompileInputs.cache
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Debug\netcoreapp2.1\RestServer.RazorAssemblyInfo.cache
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Debug\netcoreapp2.1\RestServer.RazorAssemblyInfo.cs
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Debug\netcoreapp2.1\RestServer.AssemblyInfoInputs.cache
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Debug\netcoreapp2.1\RestServer.AssemblyInfo.cs
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Debug\netcoreapp2.1\RestServer.RazorTargetAssemblyInfo.cache
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Debug\netcoreapp2.1\Web Service Rest.dll
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Debug\netcoreapp2.1\Web Service Rest.pdb

@@ -12555,11 +12555,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Xex\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "C:\\Users\\Xex\\Documents\\GitHub\\RestServer\\WebApplication1\\RestServer.csproj",
       "projectName": "Web Service Rest",
-      "projectPath": "C:\\Users\\Xex\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "projectPath": "C:\\Users\\Xex\\Documents\\GitHub\\RestServer\\WebApplication1\\RestServer.csproj",
       "packagesPath": "C:\\Users\\Xex\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Xex\\source\\repos\\WebApplication1\\WebApplication1\\obj\\",
+      "outputPath": "C:\\Users\\Xex\\Documents\\GitHub\\RestServer\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
