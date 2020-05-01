@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace WebApplication1.Controllers
 {
@@ -19,59 +22,121 @@ namespace WebApplication1.Controllers
         [HttpGet("{rutw}", Name = "GetRut")]
         public string Get(string rutw)
         {
-            if (rutw.IndexOf("-") == -1)
-            { return "Por favor ingrese el Guión del dígito verificador (ej: 12345678-9)."; }
-            //sustrae el rut sin el digito verificador a un entero y elimina los "."
-            int rut = Int32.Parse(rutw.Substring(0,(rutw.IndexOf("-"))).Replace(".",""));
-            
-            string dv = rutw.Substring(rutw.IndexOf("-")+ 1,1);
-           
-            int Digito;
-            int Contador;
-            int Multiplo;
-            int Acumulador;
-            string RutDigito;
-
-            Contador = 2;
-            Acumulador = 0;
-
-            while (rut != 0)
+            string msgValido = "Rut invalido.";
+            StringBuilder sb = new StringBuilder();
+            StringWriter sw = new StringWriter(sb);
+            try
             {
-                Multiplo = (rut % 10) * Contador;
-                Acumulador = Acumulador + Multiplo;
-                rut = rut / 10;
-                Contador = Contador + 1;
+               
+               
 
-                if (Contador == 8)
+                if (rutw.IndexOf("-") == -1)
                 {
-                    Contador = 2;
+                    msgValido = "Por favor ingrese el Guión del dígito verificador(ej: 12345678 - 9).";
+                    using (JsonWriter writer = new JsonTextWriter(sw))
+                    {
+                        writer.Formatting = Formatting.Indented;
+
+                        writer.WriteStartObject();
+                        writer.WritePropertyName("msgValido");
+        
+                        writer.WriteValue(msgValido);
+
+
+                        writer.WriteEndObject();
+                    }
+
+
+                    return sb.ToString();
+
+
                 }
+                //sustrae el rut sin el digito verificador a un entero y elimina los "."
+                int rut = Int32.Parse(rutw.Substring(0, (rutw.IndexOf("-"))).Replace(".", ""));
+
+                string dv = rutw.Substring(rutw.IndexOf("-") + 1, 1);
+
+                int Digito;
+                int Contador;
+                int Multiplo;
+                int Acumulador;
+                string RutDigito;
+
+                Contador = 2;
+                Acumulador = 0;
+
+                while (rut != 0)
+                {
+                    Multiplo = (rut % 10) * Contador;
+                    Acumulador = Acumulador + Multiplo;
+                    rut = rut / 10;
+                    Contador = Contador + 1;
+
+                    if (Contador == 8)
+                    {
+                        Contador = 2;
+                    }
+                }
+
+
+
+
+                Digito = 11 - (Acumulador % 11);
+                RutDigito = Digito.ToString().Trim();
+                if (Digito == 10)
+                {
+                    RutDigito = "K";
+                }
+                if (Digito == 11)
+                {
+                    RutDigito = "0";
+                }
+
+
+                // Si el código verificador coincide con el rut, será Valido
+                //de forma contraria, se mostrará como NO Valido.
+                if (RutDigito.ToString() == dv.ToString())
+                {
+                    msgValido = "El Rut es Valido.";
+                  
+                }
+                else
+                {
+                    msgValido = "El Rut NO ES Valido.";
+                }
+
+                using (JsonWriter writer = new JsonTextWriter(sw))
+                {
+                    writer.Formatting = Formatting.Indented;
+
+                    writer.WriteStartObject();
+                    writer.WritePropertyName("msgValido");
+
+                    writer.WriteValue(msgValido);
+
+
+                    writer.WriteEndObject();
+                }
+
+                return sb.ToString();
             }
-
-
-
-
-            Digito = 11 - (Acumulador % 11);
-            RutDigito = Digito.ToString().Trim();
-            if (Digito == 10)
+            catch (Exception e)
             {
-                RutDigito = "K";
-            }
-            if (Digito == 11)
-            {
-                RutDigito = "0";
-            }
+                msgValido = "El Rut NO ES Valido.";
+                using (JsonWriter writer = new JsonTextWriter(sw))
+                {
+                    writer.Formatting = Formatting.Indented;
+
+                    writer.WriteStartObject();
+                    writer.WritePropertyName("msgValido");
+
+                    writer.WriteValue(msgValido);
 
 
-            // Si el código verificador coincide con el rut, será Valido
-            //de forma contraria, se mostrará como NO Valido.
-            if (RutDigito.ToString() == dv.ToString())
-            {
-                return "El Rut es Valido.";
-            }
-            else
-            {
-                return "El Rut NO ES Valido.";
+                    writer.WriteEndObject();
+                }
+
+                return sb.ToString();
             }
         }
 

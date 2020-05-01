@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace WebApplication1.Controllers
 {
@@ -18,19 +21,48 @@ namespace WebApplication1.Controllers
         public string Get(string nombres, string paterno, string materno, string genero)
         {
             String msgSaludo = "";
+            StringBuilder sb = new StringBuilder();
+            StringWriter sw = new StringWriter(sb);
 
             //Si el Género recibido es M, se asume que es masculino, cualquier otra cosa, se asume que es femenino.
             if (genero == "M")
             {
                 msgSaludo = "Sr. " + CultureInfo.CurrentCulture.TextInfo.ToTitleCase(nombres) +" " + CultureInfo.CurrentCulture.TextInfo.ToTitleCase(paterno) + " " + CultureInfo.CurrentCulture.TextInfo.ToTitleCase(materno);
+
+               
+
+                using (JsonWriter writer = new JsonTextWriter(sw))
+                {
+                    writer.Formatting = Formatting.Indented;
+
+                    writer.WriteStartObject();
+                    writer.WritePropertyName("msgSaludo");
+                    writer.WriteValue(msgSaludo);
+                   
+                  
+                    writer.WriteEndObject();
+                }
+
             }
             else
             {
                 msgSaludo = "Sra. " + CultureInfo.CurrentCulture.TextInfo.ToTitleCase(nombres) + " " + CultureInfo.CurrentCulture.TextInfo.ToTitleCase(paterno) + " " + CultureInfo.CurrentCulture.TextInfo.ToTitleCase(materno);
 
+                using (JsonWriter writer = new JsonTextWriter(sw))
+                {
+                    writer.Formatting = Formatting.Indented;
+
+                    writer.WriteStartObject();
+                    writer.WritePropertyName("msgSaludo");
+                    writer.WriteValue(msgSaludo);
+
+
+                    writer.WriteEndObject();
+                }
+
 
             }
-            return msgSaludo;
+            return sb.ToString();
 
         }
 

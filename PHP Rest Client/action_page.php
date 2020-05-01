@@ -42,7 +42,10 @@ div {
   <?php 
   $parameters = ($_GET["nombre"]) . "/" . $_GET["paterno"] . "/" . $_GET["materno"] . "/" . $_GET["genero"];
   $server = file_get_contents('http://localhost:54901/api/Name/' . rawurlencode(($parameters)));
-echo $server;
+
+$obj = json_decode($server);
+echo $obj->{'msgSaludo'}; 
+
 	 ?>
   
 </div>
