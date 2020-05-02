@@ -46,7 +46,7 @@ namespace Redes
         public string Nombre(string NOMBRES, string AP_PATERNO, string AP_MATERNO, string G)
         {
 
-            string saludo = NOMBRES+" "+AP_PATERNO+" "+AP_MATERNO;
+            string saludo = NOMBRES.ToLower()+" "+AP_PATERNO.ToLower() + " "+AP_MATERNO.ToLower();
             string filtro = new CultureInfo("en-US", false).TextInfo.ToTitleCase(saludo);
 
             if (G == "M")

@@ -20,6 +20,10 @@ namespace WebApplication1.Controllers
         [HttpGet("{nombres}/{paterno}/{materno}/{genero}", Name = "GetName")]
         public string Get(string nombres, string paterno, string materno, string genero)
         {
+            nombres = nombres.ToLower();
+            paterno = paterno.ToLower();
+            materno = materno.ToLower();
+
             String msgSaludo = "";
             StringBuilder sb = new StringBuilder();
             StringWriter sw = new StringWriter(sb);
