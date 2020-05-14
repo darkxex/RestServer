@@ -15,6 +15,8 @@ Instrucciones
 Compilados
 ----------------------------------------------------------
 1. el restservercompiled es un ejecutable, llegar y abrir que usa el puerto 5000.
-e. el soapservercompiled es un archivo svc que debe ser ejecutado con IIS. (con framework 4.5)
+2. el soapservercompiled es un archivo svc que debe ser ejecutado con IIS. (con framework 4.5)
+3. la ruta del soap debe quedar así http://localhost:8080/test/Servicio.svc?wsdl por ende el IIS debe usar
+el puerto 8080.
 
 
