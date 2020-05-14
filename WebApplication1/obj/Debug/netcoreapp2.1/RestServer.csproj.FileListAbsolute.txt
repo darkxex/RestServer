@@ -12,3 +12,7 @@ C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Debug\netcoreapp2.1
 C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Debug\netcoreapp2.1\RestServer.RazorTargetAssemblyInfo.cache
 C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Debug\netcoreapp2.1\Web Service Rest.dll
 C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Debug\netcoreapp2.1\Web Service Rest.pdb
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Debug\netcoreapp2.1\RestServer.genruntimeconfig.cache

@@ -1,0 +1,21 @@
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Release\netcoreapp2.1\win-x86\appsettings.Development.json
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Release\netcoreapp2.1\win-x86\appsettings.json
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Release\netcoreapp2.1\win-x86\Properties\launchSettings.json
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Release\netcoreapp2.1\win-x86\hostpolicy.dll
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Release\netcoreapp2.1\win-x86\hostfxr.dll
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Release\netcoreapp2.1\win-x86\Web Service Rest.exe
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Release\netcoreapp2.1\win-x86\Web Service Rest.deps.json
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Release\netcoreapp2.1\win-x86\Web Service Rest.runtimeconfig.json
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Release\netcoreapp2.1\win-x86\Web Service Rest.runtimeconfig.dev.json
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Release\netcoreapp2.1\win-x86\Web Service Rest.dll
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Release\netcoreapp2.1\win-x86\Web Service Rest.pdb
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\win-x86\RestServer.csprojAssemblyReference.cache
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\win-x86\RestServer.csproj.CoreCompileInputs.cache
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\win-x86\RestServer.RazorAssemblyInfo.cache
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\win-x86\RestServer.RazorAssemblyInfo.cs
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\win-x86\RestServer.AssemblyInfoInputs.cache
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\win-x86\RestServer.AssemblyInfo.cs
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\win-x86\RestServer.RazorTargetAssemblyInfo.cache
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\win-x86\Web Service Rest.dll
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\win-x86\Web Service Rest.pdb
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\win-x86\RestServer.genruntimeconfig.cache

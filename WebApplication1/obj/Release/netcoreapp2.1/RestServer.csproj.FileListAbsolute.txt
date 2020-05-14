@@ -1,0 +1,18 @@
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Release\netcoreapp2.1\Web Service Rest.deps.json
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Release\netcoreapp2.1\Web Service Rest.runtimeconfig.json
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Release\netcoreapp2.1\Web Service Rest.runtimeconfig.dev.json
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Release\netcoreapp2.1\Web Service Rest.dll
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Release\netcoreapp2.1\Web Service Rest.pdb
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\RestServer.csproj.CoreCompileInputs.cache
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\RestServer.RazorAssemblyInfo.cache
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\RestServer.RazorAssemblyInfo.cs
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\RestServer.AssemblyInfoInputs.cache
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\RestServer.AssemblyInfo.cs
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\RestServer.RazorTargetAssemblyInfo.cache
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\Web Service Rest.dll
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\Web Service Rest.pdb
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Release\netcoreapp2.1\appsettings.Development.json
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Release\netcoreapp2.1\appsettings.json
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\bin\Release\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\RestServer.csprojAssemblyReference.cache
+C:\Users\Xex\Documents\GitHub\RestServer\WebApplication1\obj\Release\netcoreapp2.1\RestServer.genruntimeconfig.cache
