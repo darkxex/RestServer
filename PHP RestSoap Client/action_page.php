@@ -40,8 +40,8 @@ div {
 <div>
   <h3>Cliente en PHP para servidor Rest. (Saludar)</h3>
   <?php 
-  $parameters = ($_GET["nombre"]) . "/" . $_GET["paterno"] . "/" . $_GET["materno"] . "/" . $_GET["genero"];
-  $server = file_get_contents('http://localhost:54901/api/Name/' . rawurlencode(($parameters)));
+  $parameters = rawurlencode($_GET["nombre"]) . "/" . rawurlencode($_GET["paterno"]) . "/" . rawurlencode($_GET["materno"]) . "/" . rawurlencode($_GET["genero"]);
+  $server = file_get_contents('http://localhost:5000/api/Name/' . (($parameters)));
 
 $obj = json_decode($server);
 echo $obj->{'msgSaludo'}; 

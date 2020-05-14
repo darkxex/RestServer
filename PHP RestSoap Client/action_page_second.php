@@ -42,7 +42,7 @@ div {
   
   <?php 
   $parameters = ($_GET["rut"]);
-  $server = file_get_contents('http://localhost:54901/api/rut/' . rawurlencode(($parameters)));
+  $server = file_get_contents('http://localhost:5000/api/rut/' . rawurlencode(($parameters)));
 $obj = json_decode($server);
 echo $obj->{'msgValido'}; 
 	 ?>
