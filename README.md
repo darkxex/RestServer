@@ -7,7 +7,8 @@ sé usó algo de Javascript para validar algunos datos.
 Instrucciones
 -----------------------------------------------
 1. Instalar Xammpp.
-2. habilitar SoapClient en Xammpp. aquí un tutorial si no sabes. https://www.youtube.com/watch?v=ZIv06qYntnI
+2. habilitar SoapClient en Xammpp. Para esto abrir php.ini y buscar ";extension=soap", quitar ; para que quede como "extension=soap"
+
 3. mover el contenido de "PHP RestSoap Client" a htdocs de tu Xammpp.
 4. iniciar Xammpp y entrar a localhost para cargar los clientes.
 5. iniciar los servidores correspondientes con Visual Studio 2017.
