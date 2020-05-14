@@ -42,7 +42,7 @@ div {
   <?php 
   $parameters = ($_GET["nombre"]) . "/" . $_GET["paterno"] . "/" . $_GET["materno"] . "/" . $_GET["genero"];
 
-$soapclient = new SoapClient('http://localhost:61725/Servicio.svc?wsdl', array('trace' => true));
+$soapclient = new SoapClient('http://localhost:8080/test/Servicio.svc?wsdl', array('trace' => true));
 $param = array('NOMBRES' => ($_GET["nombre"]),'AP_PATERNO' => $_GET["paterno"],'AP_MATERNO' => $_GET["materno"],'G' => $_GET["genero"],);
 
 $response = $soapclient->Nombre($param);

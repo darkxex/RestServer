@@ -44,7 +44,7 @@ div {
 
 $parameters = ($_GET["rut"]);
 //Create the client object
-$soapclient = new SoapClient('http://localhost:61725/Servicio.svc?wsdl', array('trace' => true));
+$soapclient = new SoapClient('http://localhost:8080/Servicio.svc?wsdl', array('trace' => true));
 
 //Use the functions of the client, the params of the function are in 
 //the associative array
