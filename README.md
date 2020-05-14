@@ -12,4 +12,9 @@ Instrucciones
 4. iniciar Xammpp y entrar a localhost para cargar los clientes.
 5. iniciar los servidores correspondientes con Visual Studio 2017.
 
+Compilados
+----------------------------------------------------------
+1. el restservercompiled es un ejecutable, llegar y abrir que usa el puerto 5000.
+e. el soapservercompiled es un archivo svc que debe ser ejecutado con IIS. (con framework 4.5)
+
 
